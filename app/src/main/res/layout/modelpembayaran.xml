@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/mMaterialLetterIcon"
+            android:layout_width="@dimen/list_item_avatar_size"
+            android:layout_height="@dimen/list_item_avatar_size"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/mIdnisnTxt"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon"
+            android:padding="5dp"
+            android:text="Nisn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#009968" />
+
+        <TextView
+            android:id="@+id/mTanggalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon"
+            android:layout_below="@id/mIdnisnTxt"
+            android:maxLines="3"
+            android:fontFamily="@font/didact_gothic"
+            android:text="13"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/mBulanTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon"
+            android:layout_below="@id/mTanggalTxt"
+            android:maxLines="3"
+            android:fontFamily="@font/didact_gothic"
+            android:text="April"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/mTahunTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mMaterialLetterIcon"
+            android:layout_below="@id/mBulanTxt"
+            android:maxLines="3"
+            android:fontFamily="@font/didact_gothic"
+            android:text="2021"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        <TextView
+            android:id="@+id/mIdpetugasTxt"
+            fontPath="fonts/RobotoCondensed-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Id Petugas"
+            android:textColor="@color/purple_700"
+            android:textStyle="italic"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/mIdsppTxt"
+            fontPath="fonts/RobotoCondensed-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_below="@id/mIdpetugasTxt"
+            android:text="ID Spp "
+            android:textColor="@color/purple_700"
+            android:textStyle="italic"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/mJumlahTxt"
+            fontPath="fonts/RobotoCondensed-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_below="@id/mIdsppTxt"
+            android:text="Jumlah "
+            android:textColor="@color/purple_700"
+            android:textStyle="italic"
+            tools:ignore="MissingPrefix" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

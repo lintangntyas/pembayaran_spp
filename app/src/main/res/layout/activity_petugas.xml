@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.PetugasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/datapetugas"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/mProgressBarSave"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <TextView
+            android:id="@+id/headerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="MissingPrefix" />
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Username"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_namapetugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nama Petugas"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingPrefix"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Level"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+    </LinearLayout>
+
+</ScrollView>

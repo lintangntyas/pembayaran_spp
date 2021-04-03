@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Ukk_Lintang2021"

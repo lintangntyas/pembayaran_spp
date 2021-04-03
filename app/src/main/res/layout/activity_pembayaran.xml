@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.PembayaranActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/datapembayaran"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Pembayaran SPP"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_petugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingPrefix"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="ID Petugas"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_nisn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingPrefix"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="NISN"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/didact_gothic"
+            android:hint="Tanggal : " />
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_tanggal"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date"
+            android:ems="10"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_bulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingPrefix"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Bulan"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingPrefix"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Tahun"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_spp"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="ID SPP"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/id_jumlah"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nominal"
+            android:textColor="@color/purple_700"
+            app:met_floatingLabel="normal">
+
+        </com.rengwuxian.materialedittext.MaterialAutoCompleteTextView>
+
+    </LinearLayout>
+
+</ScrollView>
